@@ -1,6 +1,7 @@
 require "fileutils"
 require "rubygems"
 
+$:.unshift File.expand_path("./lib")
 require "mail_catcher/version"
 
 # XXX: Would prefer to use Rake::SprocketsTask but can't populate
@@ -55,5 +56,7 @@ require "rake/testtask"
 Rake::TestTask.new do |task|
   task.pattern = "spec/*_spec.rb"
 end
+
+task :test => :assets
 
 task :default => :test

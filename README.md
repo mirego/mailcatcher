@@ -44,7 +44,7 @@ Under RVM your mailcatcher command may only be available under the ruby you inst
 
 ### Rails
 
-To set up your rails app, I recommend adding this to your `environment/development.rb`:
+To set up your rails app, I recommend adding this to your `environments/development.rb`:
 
     config.action_mailer.delivery_method = :smtp
     config.action_mailer.smtp_settings = { :address => "localhost", :port => 1025 }
@@ -92,7 +92,7 @@ A fairly RESTful URL schema means you can download a list of messages in JSON fr
 * Add mail delivery on request, optionally multiple times.
 * An API-compatible nodejs version, for fun and profit (and non-ruby npm users).
 * Test suite.
-* Compatibility testing against CampaignMonitor's [design guidelines](http://www.campaignmonitor.com/design-guidelines/) and [CSS support matrix](http://www.campaignmonitor.com/design-guidelines/).
+* Compatibility testing against CampaignMonitor's [design guidelines](http://www.campaignmonitor.com/design-guidelines/) and [CSS support matrix](http://www.campaignmonitor.com/css/).
 * Forward mail to rendering service, maybe CampaignMonitor?
 * Package as an app? Native interfaces? HotCocoa?
 
